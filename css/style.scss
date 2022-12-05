@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+$black : #000;
+$white : #fff;
+$c1 : #FB2576;
+$c2 : #3F0071;
+$c3 : #FED049;
+$c4 : #FCE2DB;
+
+$glass :rgba($color: #FCE2DB, $alpha: .2);
+
+body{
+    background: $black;
+}
+
+.circle{
+    width: 100%;
+    height: 80vh;
+    // position: relative;
+    top: 0;
+    left: 0;
+    .c{
+        border-radius: 50%;
+        position: fixed;
+    }
+    .circle_1{
+        width: 13rem;
+        height: 13rem;
+        background: $c1;
+        top: 50%;
+        left: 7%;
+        z-index: -1;
+
+    }
+    .circle_2{
+        width: 10rem;
+        height: 10rem;
+        background: $c2;
+        top: 25%;
+        right: 45%;
+        z-index: -1;
+
+    }
+}
+
+.heading{
+    text-align: center;
+    margin-top: 3rem;
+    h1{
+        color: $white;
+    }   
+}
+.all_content{
+    display: grid;
+    place-items: center;
+    .playlists{
+        margin-top: 4rem;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item{
+            background: $glass;
+            backdrop-filter: blur(10px);
+            min-width: 20rem;
+            max-width: 20rem;
+            height: 13rem;
+            margin: 1rem;
+            a{
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                display: grid;
+                place-items: center;
+                color: $white;
+
+
+            }
+            .img_link{
+                // width: 100%;
+                height: 18rem;
+                img{
+                    width: 100%;
+                }
+                a{
+                    width: 100%;
+                    height: 2rem;
+                    text-decoration: none;
+                    display: grid;
+                place-items: center;
+                color: $white;
+                background: $glass;
+                backdrop-filter: blur(2px);
+                
+                
+            }
+        }
+            
+
+        }
+        
+
+    }
+
+}
